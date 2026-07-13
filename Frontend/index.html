@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Storage System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>File Storage System</h1>
+            <p>Upload, manage, and download your files securely</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <input type="file" id="fileInput" multiple style="display: none;">
+                <div class="upload-content">
+                    <i class="upload-icon">📁</i>
+                    <h3>Drag & Drop files here</h3>
+                    <p>or</p>
+                    <button class="btn-primary" onclick="document.getElementById('fileInput').click()">
+                        Browse Files
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="files-section">
+            <h2>Stored Files</h2>
+            <div class="files-grid" id="filesGrid">
+                <!-- Files will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
